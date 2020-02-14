@@ -245,8 +245,25 @@ still missing some things in the header, the header the image is in the right pl
 about and lets work together are too wide
 */
 
+
+
 /* stretch goals */
 
+/* extra page */
+.blog-img{
+    width:800px;
+    object-fit: cover;
+    
+
+}
+.blog-img-box{
+    height: 183px;
+    overflow: hidden;
+    margin-top:1%
+}
+
+
+/* anim */
 #carbox {
     width: 800px;
     height: 153px;
