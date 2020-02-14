@@ -241,7 +241,6 @@ about and lets work together are too wide
 
     animation-name: drive-up;
     animation-duration: 5s;
-    animation-delay: 0s;
     animation-iteration-count: infinite;
 }
 
@@ -251,11 +250,21 @@ about and lets work together are too wide
         left: 50%;
         width: 10px;
     }
+    /* 25%{
+        top: 4%;            this doesn't look smooth, would have to add a lot more keyframes
+        left: 43%;
+    }
+    75%{
+        top: 9%;
+        left: 35%;
+    } */
+    100% {
+        top: 12%;
+        left: 31%;
+    }
 }
 
 #car img {
     width: 100%;
-    filter: invert(100%);
-    border: 1px solid black;
-
+    filter: invert(100%) brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
 }
