@@ -225,3 +225,37 @@ mvp reached:
 still missing some things in the header, the header the image is in the right place but the tags are in the wrong place
 about and lets work together are too wide
 */
+
+/* stretch goals */
+
+#car {
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    animation-name: drive-up;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive-up{
+    0% {
+        top:2%;
+        left: 50%;
+        width: 10px;
+    }
+}
+
+#car img {
+    width: 100%;
+    filter: invert(100%);
+    border: 1px solid black;
+
+}
