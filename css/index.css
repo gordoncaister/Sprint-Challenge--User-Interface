@@ -247,6 +247,14 @@ about and lets work together are too wide
 
 /* stretch goals */
 
+#carbox {
+    width: 800px;
+    height: 153px;
+    position: absolute;
+    top: 108px;
+    margin: -1% auto;
+}
+
 #car {
     z-index: 1;
     width: 100px;
@@ -257,29 +265,37 @@ about and lets work together are too wide
     align-items: center;
     justify-content: center;
     position: absolute;
+    
 
     animation-name: drive-up;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
 }
 
 @keyframes drive-up{
     0% {
-        top:3.5%;
-        left: 50%;
+        top: -2vh;
+        left: 54%;
         width: 10px;
     }
-    /* 25%{
-        top: 4%;            this doesn't look smooth, would have to add a lot more keyframes
+    12.5%{
+        left: 53%;
+    }
+    25%{
+        left: 46%;
+    }
+    50%{
         left: 43%;
     }
+
     75%{
-        top: 9%;
-        left: 35%;
-    } */
+        left; 46
+    }
+
     100% {
-        top: 12%;
-        left: 31%;
+        top: 7vh;
+        left: 25%;
     }
 }
 
